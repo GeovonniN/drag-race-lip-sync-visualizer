@@ -1,10 +1,8 @@
 ---
 name: User story
 about: This is for creating user stories
-title: ''
+title: 'US-XX: '
 labels: ''
-assignees: ''
-
 ---
 
 **As a** [role]  
