@@ -1,6 +1,7 @@
-from core.constants import Franchise
 import argparse
 import sys
+
+from core.constants import Franchise
 
 
 def parse_franchise(name: str) -> Franchise:

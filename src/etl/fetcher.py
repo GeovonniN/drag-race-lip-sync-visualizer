@@ -1,5 +1,6 @@
 import requests
-from core.constants import Franchise, WIKI_URL
+
+from core.constants import WIKI_URL, Franchise
 
 
 def get_section_index(
