@@ -45,8 +45,3 @@ def get_content(
     data = response.json()
 
     return data["parse"]["wikitext"]["*"]
-
-
-print(get_content(Franchise.AS_US, 7, "Contestants"))
-# f = Franchise.US
-# print(f.page_name.format(8))
