@@ -1,6 +1,5 @@
 import requests
-from constants import Franchise
-import constants
+from core.constants import Franchise, WIKI_URL
 
 
 def get_section_index(
@@ -13,7 +12,7 @@ def get_section_index(
         "format": "json",
     }
 
-    response = requests.get(constants.WIKI_URL, params=params)
+    response = requests.get(WIKI_URL, params=params)
     data = response.json()
     sections = data["parse"]["sections"]
 
@@ -41,7 +40,7 @@ def get_content(
         "format": "json",
     }
 
-    response = requests.get(constants.WIKI_URL, params=params)
+    response = requests.get(WIKI_URL, params=params)
 
     data = response.json()
 
