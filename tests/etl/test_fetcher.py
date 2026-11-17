@@ -22,7 +22,10 @@ def test_get_section_index_valid_response(mocker):
     mock_response = mocker.Mock()
     mock_response.json.return_value = {
         "parse": {
-            "sections": [{"line": "123", "index": intended_section_index}, {"line": "456", "index": 2}]
+            "sections": [
+                {"line": "123", "index": intended_section_index},
+                {"line": "456", "index": 2},
+            ]
         }
     }
 
